@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(15, 97, 122);
+        }
+
+        header{
+            background-color: rgb(87, 205, 245);
+            text-align: center;
+        }
+
+        main{
+            max-width: 800px;
+            min-width: 220px;
+            margin: auto;
+            background-color: rgb(79, 167, 155);
+        }
+
+        fieldset{
+            width: 200px;
+            padding: 20px;
+        }
+
+        form{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header><h1>Formularios</h1></header>
+    <main>
+        <form action="cadastro.php" autocomplete="on">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="inome">
+                </div>
+                <div>
+                    <label for="iemail">Email:</label>
+                    <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="email@.com">
+                </div>
+                <div>
+                    <label for="tel">Telefone:</label>
+                    <input type="tel" name="tel" id="itel" required placeholder="(00)0000-0000">
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </div>
+                </div>
+            </fieldset>
+            <!--Estudar mais sobre RegEx-->
+        </form>
+    </main>
+</body>
+</html>
